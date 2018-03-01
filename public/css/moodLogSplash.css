@@ -1,0 +1,86 @@
+body {
+  background-color: #F4775A; /* light greu */
+}
+
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #F4775A; /* background */
+    overflow: auto; /* Overflow due to float */
+    height: 48px;
+}
+
+.icon-bar h2 {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1.06px;
+  color: White;
+  text-align: center;
+}
+
+.main-content-area {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#site-logo-happy {
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-left: 71px;
+}
+
+.title-text-area {
+  float: left;
+}
+
+.tips-title {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 32px;
+  color: white;
+  margin-top: 64px;
+  margin-bottom: 5px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  text-decoration: none;
+}
+
+.tips-text-area {
+  float: left;
+  margin-bottom: 99px;
+}
+
+p {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  text-decoration: none;
+}
+
+.filled-in {
+  background-color: white;
+  height: 48px;
+  border-radius: 24px;
+  width: 256px;
+  border: none;
+  color: #F4775A;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 24px;
+  cursor: pointer;
+  position: fixed;
+    top: 537px;
+    right: 60px;
+}

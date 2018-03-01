@@ -1,0 +1,32 @@
+<html>
+<head>
+	<title>Daily Mood Log</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../js/jquery-1.11.0.js"></script>
+		<script src="../js/storeMood.js"></script>
+		<link href="../css/daily-mood-entry.css" rel="stylesheet">
+</head>
+<body style="margin: 0;">
+	<div class="icon-bar">
+		<h2>DAILY MOOD ENTRY</h2>
+	</div>
+	<div class="mood"></div>
+	<h1>Describe why you're feeling this way</h1>
+
+	<form id="myForm">
+		<div class="entry">
+    		<textarea id="text-multi-line" placeholder="2-3 sentences" required></textarea>
+		</div>
+	</form>
+
+	<div class="navigation-table-container">
+		<table class="navigation-table2">
+			<tr>
+				<td class="back-arrow-section"><a id="backbutton" href="/daily-mood"><img src='images/backbuttonOrange.png' alt="Back Button" width=16.85 height=16.85></a></td>
+				<td class="back-text-section"><a id="backtext" onclick="goBack()" class="button"><div class="back-login">Back</div></a></td>
+				<td class="finish-section filled-in" id="finish"><div class="log-in2">Finish</div></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+
+    <html>
+<head>
+  <title>Create New Issue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/newIssue.css">
+  <script src="../js/jquery-1.11.0.js"></script>
+  <script src="../js/storeIssue.js"></script>
+</head>
+
+<body style="margin: 0;">
+<!-- NAVIGATION BAR -->
+<div class="navbar">
+  <div class="navbar-new">
+    <i onclick="goBack()" class="fa fa-chevron-left" style="color:white; left: 0; padding-left: 12px; padding-right: 10px; margin-top: 16px"></i>
+  </div>
+  <div class="navbar-left-most">
+    <div class="dropdown">
+      <div class="dropbtn">CREATE NEW ISSUE
+      </div>
+    </div>
+  </div>
+  <div class="navbar-settings">
+    <div class="dropdown">
+      <button class="dropbtn">&#9776;</button>
+      <div class="dropdown-content" style="right:0">
+        <a href="/settings">Settings</a>
+        <a href="/logOut">Log Out</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ACTUAL CONTENT BEGIN -->
+<div class="main-content-area">
+  <h1>Hey! Let's get started.</h1>
+
+<form id="newIssueForm">
+  <!-- Title Setup -->
+    <label for="title">Name this Issue</label><br \>
+    <textarea name="title" id="title"></textarea>
+    <hr class="between-elements">
+
+     <!-- Category Setup-->
+     <label for="category">Select Category</label><br \>
+     <div class="new-container">
+     <label class="btn-question" question="1">
+       <input type="radio" class="category" value="food">food</label>
+     </label>
+     <div class="separation"></div>
+     <label class="btn-question" question="1">
+       <input type="radio" class="category" value="cleaning">cleaning</label>
+     </label>
+     <div class="separation"></div>
+     <label class="btn-question" question="1">
+       <input type="radio" class="category" value="personal">personal</label>
+     </label>
+    </div>
+    <hr class="between-elements">
+
+      <!-- Description Setup-->
+    <label for="description">Describe this Issue</label><br \>
+    <textarea name="description" id="description"></textarea>
+    <hr class="between-elements">
+
+      <!-- Duration Setup-->
+      <label for="category">How long has this Issue been bothering you?</label><br \>
+      <div class="new-container">
+      <label class="btn-question" question="2">
+        <input type="radio" class="duration" value="days">days</label>
+      </label>
+      <div class="separation"></div>
+      <label class="btn-question" question="2">
+        <input type="radio" class="duration" value="weeks">weeks</label>
+      </label>
+      <div class="separation"></div>
+      <label class="btn-question" question="2">
+        <input type="radio" class="duration" value="months">months</label>
+      </label>
+      </div>
+      <hr class="between-elements">
+
+     <!-- Relationship Setup-->
+     <label for="category">Relationship with Person</label><br \>
+     <div class="new-container">
+     <label class="btn-question" question="3">
+       <input type="radio" class="relationship" value="dating">dating</label>
+     </label>
+     <div class="separation"></div>
+     <label class="btn-question" question="3">
+       <input type="radio" class="relationship" value="friends">friends</label>
+     </label>
+     <div class="separation"></div>
+     <label class="btn-question" question="3">
+       <input type="radio" class="relationship" value="acquaintances">acquaintances</label>
+     </label>
+     </div>
+     <hr class="between-elements">
+
+  <!--Step Taken Setup -->
+  <label for="category">Have you taken any steps to resolve this Issue?</label><br \>
+  <div class="new-container">
+  <label class="btn-question" question="4">
+    <input type="radio" class="previous-steps" value="directly communicated">directly communicated</label>
+  </label>
+  <div class="separation"></div>
+  <label class="btn-question" question="4">
+    <input type="radio" class="previous-steps" value="tried mentioning it">tried mentioning it</label>
+  </label>
+  <div class="separation"></div>
+  <label class="btn-question" question="4">
+    <input type="radio" class="previous-steps" value="nothing yet">nothing yet</label>
+  </label>
+  </div>
+  <hr class="between-elements">
+
+    <!-- Frequency Setup -->
+    <label for="category">Have often does this Issue occur?</label><br \>
+    <div class="new-container">
+    <label class="btn-question" question="5">
+      <input type="radio" class="frequency" value="daily">daily</label>
+    </label>
+    <div class="separation"></div>
+    <label class="btn-question" question="5">
+      <input type="radio" class="frequency" value="weekly">weekly</label>
+    </label>
+    <div class="separation"></div>
+    <label class="btn-question" question="5">
+      <input type="radio" class="frequency" value="monthly">monthly</label>
+    </label>
+    </div>
+
+</form>
+
+  <div class="center-button">
+    <a href="./moodLogSplash">
+      <button class="submit" id="finish">Next</button>
+    </a>
+  </div>
+
+  <!-- Scenario Setup
+    <label for="scenario">Which scenario best describes this issue?</label><br \>
+    <button class="btn">stealing</button>
+    <button class="btn">unsanitary</button>
+    <input type="radio" name="scenario" value="stealing">Stealing
+    <input type="radio" name="scenario" value="unsanitary">Unsanitary
+    <hr class="between-elements">
+
+-->
+
+</div>
+</body>
+</html>

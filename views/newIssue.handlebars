@@ -1,0 +1,78 @@
+
+    <html>
+<head>
+  <title>Create New Issue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/temp.css">
+
+</head>
+
+<body>
+<!-- NAVIGATION BAR -->
+
+
+<div class="navbar">
+  <div class="navbar-new">
+      <a href="/homePage"><i class="glyphicon glyphicon-home" style="padding-bottom: 5px"></i></a>
+<!--
+      <i onclick="goBack()" class="fa fa-chevron-left" style="color:white; left: 0; padding-left: 5px; padding-right: 10px; margin-top: 12px"></i>-->
+  </div>
+  <div class="navbar-left-most">
+    <div class="dropdown">
+      <button class="dropbtn" style="padding-left: 15px">New Issue
+       <!-- <i class="fa fa-chevron-down"></i> -->
+      </button>
+    </div>
+
+</div>
+</div>
+
+
+<!-- ACTUAL CONTENT BEGIN -->
+    <div class="mood">
+      <div class="mood-text-area">
+        <div class="mood-title">RECENT MOOD LOG</div>
+        <div class="mood-current">No Mood Logged</div>
+      </div>
+    </div>
+
+
+  <div class="main-content-area">
+    <h1>History</h1>
+    <!--
+      <div class="history-entry-title">Submitted Issue</div>
+      <div class="history-entry">{{timestamp}}</div>
+      <hr class="between-elements">-->
+      <div class="history-entry-title">Scenario and Category</div>
+      <div class="history-entry">{{category}}</div>
+      <div class="history-entry">{{scenario}}</div>
+      <hr class="between-elements">
+      <div class="history-entry-title">Description</div>
+      <div class="history-entry">{{description}}</div>
+      <hr class="between-elements">
+      <div class="history-entry-title">Details</div>
+      <div class="history-entry"><div class="subtitle">Duration of Issue: </div>{{duration}}</div>
+      <div class="history-entry"><div class="subtitle">Relationship with Person: </div>{{relationship}}</div>
+      <div class="history-entry"><div class="subtitle">Have you spoken to them? </div>{{previous-steps}}</div>
+      <div class="history-entry"><div class="subtitle">How often does the stealing occur? </div>{{frequency}}</div>
+      <div class="history-entry"><div class="subtitle">How much do you value the stolen item(s)? </div>{{value}}</div>
+</div>
+
+
+
+
+
+
+  <script>
+    function goBack(){
+      window.history.back();
+    }
+
+
+  </script>
+
+
+</body>
+</html>

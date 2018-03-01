@@ -1,0 +1,112 @@
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #F4775A; /* background */
+    overflow: auto; /* Overflow due to float */
+    height: 48px;
+}
+
+.icon-bar h2 {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1.06px;
+  color: White;
+  text-align: center;
+}
+
+.main-content-area {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.new-issue {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.filled-in {
+  background-color: #33cc99;
+  height: 48px;
+  border-radius: 24px;
+  width: 256px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title-text-area {
+  float: left;
+}
+
+.list-title {
+  font-family: Roboto;
+  font-weight: 600;
+  font-size: 32px;
+  color: black;
+  padding-top: 0px;
+  padding-bottom: 24px;
+  padding-left: 0px;
+  text-decoration: none;
+}
+
+table, th, td {
+    border-bottom: .5px solid #B4B4B4;
+    border-collapse: collapse;
+    width: 100%
+}
+th, td {
+    padding: 5px;
+}
+
+
+.section-title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  padding-top: 0px;
+  padding-bottom: 8px;
+  padding-left: 0px;
+  text-decoration: none;
+}
+
+.in-progress {
+    background-color: #F4775A;
+    border-radius: 5px;
+    height: 33px;
+    width: 163px;
+    margin-bottom: 26px;
+}
+
+.task-complete {
+    background-color: #33CC99;
+    border-radius: 5px;
+    height: 33px;
+    width: 163px;
+    margin-bottom: 26px;
+}
+
+.text-area {
+  float: left;
+}
+
+.mood-title {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  padding-top: 6px;
+  padding-left: 8px;
+}

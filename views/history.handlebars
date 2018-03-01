@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>History</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/history.css">
+</head>
+<body style="margin: 0;">
+
+    <script>
+    function goBack(){
+      window.history.back();
+    }
+    </script>
+<!-- NAVIGATION BAR -->
+<div class="navbar">
+  <div class="navbar-new">
+      <i onclick="goBack()" class="fa fa-chevron-left" style="color:white; left: 0; padding-left: 5px; padding-right: 10px; margin-top: 12px"></i>
+  </div>
+  <div class="navbar-left-most">
+    <div class="dropdown">
+      <div class="dropbtn">History: {{title}}</div>
+  </div>
+    </div>
+  <div class="navbar-settings">
+    <div class="dropdown">
+      <button class="dropbtn">&#9776;</button>
+      <div class="dropdown-content" style="right:0">
+        <a href="/settings">Settings</a>
+        <a href="/logOut">Log Out</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+	<div class="container">
+
+
+
+<div class="main-content-area">
+    <h1>History</h1>
+    <!--
+      <div class="history-entry-title">Submitted Issue</div>
+      <div class="history-entry">{{timestamp}}</div>
+      <hr class="between-elements">-->
+      <div class="history-entry-title">Scenario and Category</div>
+      <div class="history-entry">{{category}}</div>
+      <div class="history-entry">{{scenario}}</div>
+      <hr class="between-elements">
+      <div class="history-entry-title">Description</div>
+      <div class="history-entry">{{description}}</div>
+      <hr class="between-elements">
+      <div class="history-entry-title">Details</div>
+      <div class="history-entry"><div class="subtitle">Duration of Issue: </div>{{duration}}</div>
+      <div class="history-entry"><div class="subtitle">Relationship with Person: </div>{{relationship}}</div>
+      <div class="history-entry"><div class="subtitle">Have you spoken to them? </div>{{previous-steps}}</div>
+      <div class="history-entry"><div class="subtitle">How often does the stealing occur? </div>{{frequency}}</div>
+      <div class="history-entry"><div class="subtitle">How much do you value the stolen item(s)? </div>{{value}}</div>
+
+      <!--
+      <div class="history-entry">Length of Issue</div>
+      <div class="history-entry">Relationship with Person</div>
+      <div class="history-entry">Have you spoken to them?</div>
+      <div class="history-entry">How often does the stealing occur?</div>
+      <div class="history-entry">How much do you value the stolen item(s)?</div>
+    -->
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Daily Mood Log</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="../js/jquery-1.11.0.js"></script>
+	<link href="../css/daily-mood-entry.css" rel="stylesheet">
+</head>
+<body style="margin: 0;">
+
+	<div class="icon-bar">
+		<h2>DAILY MOOD LOG</h2>
+	</div>
+
+	<h1 class="question-title">How are you feeling?</h1>
+
+	<form id="myForm">
+	<label>
+		<input type="radio" name="moods" value="Happy.png">
+		<img class="left" style="margin-right: 21px" src="../images/Happy.png">
+	</label>
+	<label>
+		<input type="radio" name="moods" value="Meh.png">
+		<img class="right" style="margin-left: 21px" src="../images/Meh.png">
+	</label><br />
+	<label>
+		<input type="radio" name="moods" value="Unhappy.png">
+		<img class="one-inline" src="../images/Unhappy.png">
+	</label><br />
+	<label>
+		<input type="radio" name="moods" value="Crying.png">
+		<img class="left" style="margin-right: 21px" src="../images/Crying.png">
+	</label>
+	<label>
+		<input type="radio" name="moods" value="Angry.png">
+		<img class="right" style="margin-left: 21px" src="../images/Angry.png">
+	</label>
+</form>
+<div class="final-options">
+	<a href="./daily-entry">
+		<button class="temp-filled-in">Save Mood</button>
+	</a>
+</div>
+</div>
+</body>
+
+<script>
+  $(document).ready(function(){
+ $('#myForm input').on('change', function(){
+ 	localStorage.clear();
+ 	localStorage.setItem('moods', $('input[name=moods]:checked', '#myForm').val());
+ });
+  });
+</script>
+</html>

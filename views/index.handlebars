@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='eg'>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset='UTF-8'/>
+  <title>Welcome</title>
+  <link rel='stylesheet' href='../css/welcome.css'/>
+</head>
+<body style="margin: 0;">
+  <img id="site-logo" src='../images/logo.png' width=77 alt='Logo for Common Ground'/>
+  <div id="motto">
+    <h2>Conflict resolution doesn’t have to be stressful.</h2>
+    <h3>Find your common ground.</h2>
+  </div>
+  <div class="final-options">
+    <a href="/signup">
+      <button class="filled-in">Sign Up</button>
+    </a>
+    <div></div>
+    <a href="/login">
+      <button class="not-filled-in">Log In</button>
+    </a>
+  </div>
+  <div class="facebookLogin">
+  <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
+</div>
+</body>
+{{> facebook}}
+<script src="/js/facebook.js"></script>
+</html>

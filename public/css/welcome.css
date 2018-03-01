@@ -1,0 +1,235 @@
+body {
+  background-color: #F4775A;
+}
+
+h1 {
+  text-align: center;
+  font-family: Roboto;
+  color: white;
+  font-size: 32pt;
+  font-weight: bold;
+  letter-spacing: 1.42px;
+}
+
+h2 {
+  text-align: center;
+  font-family: Roboto;
+  color: white;
+  font-size: 24pt;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+}
+
+h3 {
+  text-align: center;
+  font-family: Roboto;
+  color: white;
+  font-size: 16pt;
+  font-weight: normal;
+  letter-spacing: 1.6px;
+}
+
+.final-options {
+  margin-top: 500px;
+  text-align: center;
+}
+.filled-in {
+  background-color: #F4775A;
+  border: 1px solid white;
+  height: 48px;
+  border-radius: 24px;
+  width: 256px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.not-filled-in {
+    background-color: white;
+    color: #F4775A;
+    width: 256px;
+    border: 1px solid white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#choices {
+  text-align: center;
+}
+
+#motto {
+  position: fixed;
+    width: 311px;
+    height: 139px;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    top: 214px;
+    left: 0;
+    right: 0;
+}
+
+#login-text {
+  position: fixed;
+    width: 200px;
+    height: 38px;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    top: 206px;
+    left: 0;
+    right: 0;
+}
+
+#site-logo {
+  position: fixed;
+    margin: 5% auto;
+    top: 112px;
+    left: 0;
+    right: 0;
+}
+
+#username {
+    /*width: 75%; */
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: inherit;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: fixed;
+      width: 314px;
+      height: 32px;
+      margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+      top: 320px;
+      left: 0;
+      right: 0;
+}
+
+#password {
+    /*width: 75%; */
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: inherit;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: fixed;
+      width: 314px;
+      height: 32px;
+      margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+      top: 367px;
+      left: 0;
+      right: 0;
+}
+
+#full-name {
+    /*width: 75%; */
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: inherit;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    position: fixed;
+      width: 314px;
+      height: 32px;
+      margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+      top: 414px;
+      left: 0;
+      right: 0;
+}
+
+.navigation-table-container {
+  text-align: center;
+}
+
+.navigation-table {
+  margin-top: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  text-align: center;
+  display: inline-block;
+}
+
+.back-arrow-section {
+  width: 18px;
+  text-align: center;
+}
+
+.back-text-section {
+  width: 32px;
+  text-align: center;
+}
+
+.finish-section {
+  width: 264px;
+  text-align: right;
+}
+
+#backtext {
+  font-family: Roboto;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: Roboto;
+    color: white;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.log-in2 {
+  background-color: white;
+  color: #F4775A;
+  width: 180px;
+  border: 1px solid #F4775A;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.facebookLogin {
+  text-align: center;
+}
