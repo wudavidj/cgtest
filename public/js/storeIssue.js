@@ -62,7 +62,16 @@ function clickFinish(e){
         "previous-steps": stepsVal,
         "frequency": frequencyVal,
         "moods": [],
-        "latestMood": null
+        "latestMood": null,
+        "advice1": "If the issue is not serious, wait a few more days and observe behavior",
+        "advice1status": "incomplete",
+        "advice2": "Mention the issue, but be sure not to place blame",
+        "advice2status": "incomplete",
+        "advice3": "Communicate your concerns and why it is important to you",
+        "advice3status": "incomplete",
+        "q1": "Have you been able to observe any additional behavior?",
+        "q1answer1": "Yes",
+        "q1answer2": "No"
       };
       $.post('/storeIssue', {data: JSON.stringify(newIssue)}, function(data, status){
         if(data.success){

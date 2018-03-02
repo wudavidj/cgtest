@@ -30,7 +30,7 @@ function goBack(){
 				console.log("success");
 				window.location.href="/homePage";
 			}
-			
+
 		});
 	}
 

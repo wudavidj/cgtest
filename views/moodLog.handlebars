@@ -2,10 +2,11 @@
 <head>
 	<title>Mood Log</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="../css/moodLog.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <script src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="../js/jquery-1.11.0.js"></script>
+  <script src="../js/jquery-1.11.0.js"></script>
 
 </head>
 <body style="margin: 0;">
@@ -58,11 +59,11 @@
 
 <div class="navbar">
   <div class="navbar-new">
-      <i onclick="goBack()" class="fa fa-chevron-left" style="color:white; left: 0; padding-left: 5px; padding-right: 10px; margin-top: 12px"></i>
+      <i onclick="goBack()" class="fa fa-chevron-left" style="color:white; left: 0; padding-left: 12px; padding-right: 10px; margin-top: 15px"></i>
   </div>
   <div class="navbar-left-most">
     <div class="dropdown">
-      <div class="dropbtn">Mood Log: {{title}}</div>
+      <div class="dropbtn">{{title}} – Mood Log</div>
   </div>
     </div>
   <div class="navbar-settings">
@@ -78,21 +79,19 @@
 
 	<div class="container">
 	<h1>Mood Log</h1>
-
   <div id="donutchart" style="width: 300px; height: 170px"></div>
-
   {{#moods}}
 	<table>
 		<tr>
-			<th id="col-1"><figure class="pictures">
-				<img src="../images/{{emoji}}" width="60" height="60">
-				<figcaption>{{month}}, {{day}}, 2018</figcaption>
-			</figure></th>
-			<th id="col-2">{{comment}}</th>
+			<td id="col-1">
+				<figure class="pictures"><img src="../images/{{emoji}}" width="48" height="48">
+					<figcaption>{{month}} {{day}}, 2018</figcaption>
+				</figure></td>
+			<td id="col-2">{{comment}}</td>
 		</tr>
 	</table>
-		<hr class="between-elements">
-    {{/moods}}
+	<hr class="between-elements">
+	{{/moods}}
 </div>
 </body>
 </html>

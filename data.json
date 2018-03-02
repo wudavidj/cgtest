@@ -29,7 +29,17 @@
                 "comment": "I just wish he could at least ask me first."
             }
         ],
-        "latestMood": "Unhappy.png"
+        "latestMood": "Unhappy.png",
+        "advice1": "If the issue is not serious, wait a few more days and observe behavior",
+        "advice1-status": "completed",
+        "advice2": "Mention the issue, but be sure not to place blame",
+        "advice2-status": "completed",
+        "advice3": "Communicate your concerns and why it is important to you",
+        "advice3-status": "completed",
+        "q1": "Have you been able to observe any additional behavior?",
+        "q1answer1": "Yes",
+        "q1answer2": "No"
+
     },
     "Chores with Rinka": {
         "boolean": false,
@@ -61,6 +71,15 @@
                 "comment": "JUST WORK PLZZ"
             }
         ],
-        "latestMood": "Crying.png"
+        "latestMood": "Crying.png",
+        "advice1": "If the issue is not serious, wait a few more days and observe behavior",
+        "advice1-status": "completed",
+        "advice2": "Mention the issue, but be sure not to place blame",
+        "advice2-status": "incomplete",
+        "advice3": "Communicate your concerns and why it is important to you",
+        "advice3-status": "completed",
+        "q1": "Have you been able to observe any additional behavior?",
+        "q1answer1": "Yes",
+        "q1answer2": "No"
     }
 }
